@@ -1,0 +1,21 @@
+[
+    {
+        "host": "192.168.1.1",
+        "tag": "",
+        "commands": [
+            {
+                "expect":"name: ",
+                "command": "user1"
+            },{
+                "expect":"assword: ",
+                "command": "pas@123"
+            },{
+                "expect":"#",
+                "command": "show run",
+                "eof":"#"
+            }
+        ],
+        "port": 23,
+        "timeout": 30
+    }
+]
